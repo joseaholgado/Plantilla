@@ -1,7 +1,7 @@
 'use strict';
 
 // Array con diferentes textos
-const textos = ["Desarrollador Web", "Programador", "Sexy y provocativo"];
+const textos = ["Desarrollador Full-Stack", "Programador", "Desarrollador Web"];
 
 // Obtener el elemento donde se escribirá el texto
 const textoMecanico = document.getElementById('dw');

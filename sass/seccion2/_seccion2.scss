@@ -1,0 +1,47 @@
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.title {
+    grid-column: span 3; /* Ocupa todas las columnas disponibles */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    justify-content: center;
+}
+
+.barra-progreso {
+    width: 30%;
+    height: 10px;
+    background-color: #eee;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #00abf0; /* Puedes cambiar el color según tu preferencia */
+    border-radius: 10px 0 0 10px;
+}
+
+.porcentaje {
+    margin-top: 5px;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+}
+.imgPequeno{
+    max-width: 30%;
+}

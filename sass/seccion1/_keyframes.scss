@@ -1,0 +1,15 @@
+@keyframes mover {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Comienza y termina en la posición original */
+    }
+
+    50% {
+        box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 2.5);
+        /*Efecto sombra*/
+        transform: translateY(-20px);
+        /* Sube 20px */
+    }
+}
