@@ -1,0 +1,7 @@
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    background-image: url('../../img/enconstruccion.jpg');
+}

@@ -200,7 +200,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
   padding: 10px;
   justify-content: center;
 }
@@ -231,6 +230,14 @@ img {
 
 .imgPequeno {
   max-width: 30%;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  background-image: url("../../img/enconstruccion.jpg");
 }
 
 * {
