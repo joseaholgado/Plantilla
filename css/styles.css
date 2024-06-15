@@ -18,6 +18,10 @@
   font-weight: 600;
 }
 
+.navbar {
+  display: block;
+}
+
 .navbar a {
   font-size: 18px;
   color: white;
@@ -25,10 +29,67 @@
   font-weight: 500;
   margin-left: 35px;
 }
-.navbar a:hover, .navbar a.active {
+
+.navbar a:hover,
+.navbar a.active {
   color: #2c40b2;
 }
 
+.menu-btn {
+  display: none;
+}
+
+/* Estilo para pantalla menor de 768px */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #2c3e50;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 200;
+  }
+  .sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    background: #575757;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 150;
+  }
+  .overlay.active,
+  .sidebar.active {
+    display: block;
+    left: 0;
+  }
+}
 @keyframes mover {
   0%, 100% {
     transform: translateY(0);

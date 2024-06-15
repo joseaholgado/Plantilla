@@ -1,13 +1,22 @@
 'use strict';
-import { llenar_barra_progreso } from './seccion1/barra_progreso.mjs'
-import { escribirYBorrar } from './seccion2/escritura_mecanica.mjs'
+import { fill_progress_bar } from './seccion1/progress_bar.mjs'
+import { write_remove } from './seccion2/writing_mecanic.mjs'
+import { toggle_menu, close_menu } from './navbar/show_hide_menu.mjs'
+
+
+//Hear tell event of menu button with the function show_hide_menu
+const menu_btn = document.querySelector('.menu-btn')
+const overlay = document.querySelector('.overlay')
+menu_btn.addEventListener('click', toggle_menu)
+overlay.addEventListener('click', close_menu)
+
 
 // Array con diferentes textos
 const textos = ["Desarrollador Full-Stack", "Programador", "Desarrollador Web"]
 
 
 // Iniciar el proceso con el primer texto del array
-escribirYBorrar(textos, 0, 0)
+write_remove(textos, 0, 0)
 
 
 // Valores iniciales para cada barra de progreso
@@ -25,5 +34,7 @@ const valoresIniciales = {
 };
 // Iniciar el llenado desde 0 para cada barra de progreso
 for (const id in valoresIniciales) {
-    llenar_barra_progreso(id, 0, valoresIniciales)
+    fill_progress_bar(id, 0, valoresIniciales)
 }
+
+
