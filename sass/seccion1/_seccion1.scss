@@ -8,8 +8,6 @@
 .home {
     flex-grow: 1;
     max-width: calc(70% - 20px);
-    ;
-
     height: 100vh;
     display: flex;
     align-items: center;
@@ -153,13 +151,12 @@
 
 .img {
     flex-basis: calc(40% - 20px);
-    margin-top: 160px;
+    margin-top: 120px;
     margin-right: 140px;
-    height: 550px;
+    height: 30vw; 
     border: solid 1px #000000;
     background-image: url('../img/fotocv.jpg');
     border-radius: 50%;
-
     background-size: 100% 100%;
     background-position: center;
     animation: mover 2s ease-in-out infinite;
@@ -167,4 +164,23 @@
 
 }
 
+@media (max-width: 1000px) {
+    .img{
+        margin-top: 180px;
+    }
+}
 
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home{
+        max-width: none;
+    }
+   
+    .img{
+        display: none;
+    }
+}

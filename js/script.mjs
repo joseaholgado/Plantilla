@@ -1,6 +1,6 @@
 'use strict';
-import { fill_progress_bar } from './seccion1/progress_bar.mjs'
-import { write_remove } from './seccion2/writing_mecanic.mjs'
+import { fill_progress_bar } from './seccion2/progress_bar.mjs'
+import { write_remove } from './seccion1/writing_mecanic.mjs'
 import { toggle_menu, close_menu } from './navbar/show_hide_menu.mjs'
 
 
@@ -12,7 +12,7 @@ overlay.addEventListener('click', close_menu)
 
 
 // Array con diferentes textos
-const textos = ["Desarrollador Full-Stack", "Programador", "Desarrollador Web"]
+const textos = ["Programador", "Desarrollador", "Full-Stack"]
 
 
 // Iniciar el proceso con el primer texto del array

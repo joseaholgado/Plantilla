@@ -37,6 +37,9 @@
 .menu-btn {
     display: none;
 }
+.sidebar, .overlay {
+    display: none;
+}
 
 /* Estilo para pantalla menor de 768px */
 @media (max-width: 768px) {
