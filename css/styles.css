@@ -264,6 +264,9 @@
   .home {
     max-width: none;
   }
+  .home-sci {
+    bottom: 17px;
+  }
   .img {
     display: none;
   }
